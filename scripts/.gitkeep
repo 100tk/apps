@@ -1,2 +1,2 @@
-# This directory stores helper files like shell scripts, registry entries etc. for installable applications.
-# Delete this '.gitkeep' file once this directory has any files.
+# 此目录存储可安装应用程序的辅助文件，例如 shell 脚本、注册表项等。
+# 一旦此目录中没有任何文件，请删除此“.gitkeep”文件。
