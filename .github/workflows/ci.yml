@@ -6,6 +6,10 @@ on:
       - 'main'
       - 'master'
   pull_request:
+    branches: [master]        # 限定目标分支为 master
+    paths:
+      - 'bucket/**'           # 仅当 bucket 目录（含子目录）内有文件变更时触发
+    types: [opened, synchronize, reopened]  # 可选：限定具体的 PR 活动类型
   workflow_dispatch:
 
 permissions:
