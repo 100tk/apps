@@ -42,11 +42,11 @@
         "    }",
         "}"
     ],
-    "checkver":{
+    "checkver": {
         "url": "https://www.u-tools.cn/download",
         "regex": "v(?<version>\\d+(?:\\.\\d+)+)"
     },
     "autoupdate": {
-        "url":"https://open.u-tools.cn/download/uTools-$version.exe#/dl.7z"
+        "url": "https://open.u-tools.cn/download/uTools-$version.exe#/dl.7z"
     }
 }
