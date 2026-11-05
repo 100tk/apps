@@ -1,9 +1,9 @@
 {
     "version": "8.0.2",
-    "description": "uTools, 你的下一代工具平台",
+    "description": "utools, 你的下一代工具平台",
     "homepage": "https://www.u-tools.cn",
     "license": "Proprietary",
-    "##": "uTools",
+    "##": "utools",
     "notes": [
         "AI 生成应用 · 汇聚海量实用工具 · 连接 AI Agent"
     ],
@@ -47,6 +47,9 @@
         "regex": "v(?<version>\\d+(?:\\.\\d+)+)"
     },
     "autoupdate": {
-        "url": "https://open.u-tools.cn/download/uTools-$version.exe#/dl.7z"
+        "url": "https://open.u-tools.cn/download/uTools-$version.exe#/dl.7z",
+        "hash": {
+            "mode": "download"
+        }
     }
 }

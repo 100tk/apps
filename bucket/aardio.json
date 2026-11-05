@@ -1,0 +1,31 @@
+{
+    "##": "桌面软件快速开发工具",
+    "version": "46.20.6",
+    "description": "桌面软件快速开发工具",
+    "homepage": "https://www.aardio.com/",
+    "license": "Freeware",
+    "notes": "https://www.aardio.com/zh-cn/docs 在线文档",
+    "architecture": {
+        "64bit": {
+            "url": "https://d.aardio.com/ide/aardio.7z",
+            "hash": "1EC393B81BEC5B5E26A7B3A204CBF64581D1E36F03528A23B5094C249727819E"
+        }
+    },
+    "shortcuts": [
+        [
+            "aardio.exe",
+            "Aardio"
+        ]
+    ],
+    "persist": [
+        "config"
+    ],
+    "uninstaller": {
+        "script": [
+            "$FolderPath = Join-Path $env:LOCALAPPDATA 'aardio'",
+            "if (Test-Path $FolderPath) {",
+            "    Remove-Item -Path $FolderPath -Recurse -Force",
+            "}"
+        ]
+    }
+}
