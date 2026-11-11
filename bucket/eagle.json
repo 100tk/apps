@@ -53,13 +53,13 @@
         "}"
     ],
     "checkver": {
-        "url": "",
-        "regex": ""
+        "url": "https://cn.eagle.cool",
+        "regex": "版本"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": ""
+                "url": "https://r2-app.eagle.cool/releases/Eagle-4.0-x64-build23.exe"
             }
         },
         "hash": {
