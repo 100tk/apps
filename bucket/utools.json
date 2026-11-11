@@ -1,9 +1,9 @@
 {
+    "##": "utools",
     "version": "8.0.2",
     "description": "utools, 你的下一代工具平台",
     "homepage": "https://www.u-tools.cn",
     "license": "Proprietary",
-    "##": "utools",
     "notes": [
         "AI 生成应用 · 汇聚海量实用工具 · 连接 AI Agent"
     ],

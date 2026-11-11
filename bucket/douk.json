@@ -1,0 +1,38 @@
+{
+    "##": "抖音 / TikTok 平台作品下载/数据采集工具",
+    "version": "5.8",
+    "description": "抖音 / TikTok 平台作品下载/数据采集工具",
+    "homepage": "https://github.com/JoeanAmier/TikTokDownloader",
+    "license": "GPL-3.0-only",
+    "notes": "抖音 / TikTok 平台作品下载/数据采集工具",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/JoeanAmier/TikTokDownloader/releases/download/5.8/DouK-Downloader_V5.8_Windows_X64.zip",
+            "hash": "C96342EF1256B708B26AB742CAC2E6F29AED78E40C82D52098AF01737951910C"
+        }
+    },
+    "bin": [
+        [
+            "DouK-Downloader.exe",
+            "douk"
+        ]
+    ],
+    "persist": [
+        "Volume"
+    ],
+    "checkver": {
+        "github": "https://github.com/JoeanAmier/TikTokDownloader",
+        "regex": ""
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/JoeanAmier/TikTokDownloader/releases/download/$version/DouK-Downloader_V$version_Windows_X64.zip"
+            }
+        },
+        "hash": {
+            "url": "",
+            "regex": ""
+        }
+    }
+}
