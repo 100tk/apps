@@ -1,13 +1,13 @@
 {
     "##": "素材管理从未如此简单",
-    "version": "4.0",
+    "version": "4.0.23",
     "description": "Eagle 素材管理",
     "homepage": "https://cn.eagle.cool",
     "license": "",
     "notes": "使用 Eagle 轻松收集及整理“案例、灵感、截图、图片、视频、音频、情绪板”等各种素材，激发更多创意灵感，让工作变得更有效率！",
     "architecture": {
         "64bit": {
-            "url": "https://r2-app.eagle.cool/releases/Eagle-4.0-x64-build23.exe#install.exe",
+            "url": "https://r2-app.eagle.cool/releases/Eagle-4.0-x64-build23.exe#/install.exe",
             "hash": "6F92AECB6C53F5E3A9DEE49605F1955AE116E2ADCD5ED2E6DE1D19D732F94D38"
         }
     },
