@@ -1,0 +1,50 @@
+{
+    "##": "",
+    "version": "5.34",
+    "description": "",
+    "homepage": "https://www.dcloud.io/hbuilderx.html",
+    "license": "",
+    "notes": "",
+    "architecture": {
+        "64bit": {
+            "url": "https://download1.dcloud.net.cn/download/HBuilderX.5.34.2026102909.zip",
+            "hash": "5DDEF1FE3D61F9F11BD8F390B633F204EEC00BD2C04FFF270CBBA21727C6EFF4"
+        }
+    },
+    "shortcuts": [[]],
+    "pre_install": "",
+    "installer": {
+        "script": ""
+    },
+    "post_install": [
+        "",
+        ""
+    ],
+    "uninstaller": {
+        "script": ""
+    },
+    "bin": "",
+    "env_add_path": [
+        "",
+        ""
+    ],
+    "persist": [
+        "",
+        ""
+    ],
+    "checkver": {
+        "url": "",
+        "regex": ""
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": ""
+            }
+        },
+        "hash": {
+            "url": "",
+            "regex": ""
+        }
+    }
+}

@@ -30,7 +30,7 @@
     "pre_install": [
         "$FolderPath = Join-Path $env:APPDATA 'eagle'",
         "if (Test-Path $FolderPath) {",
-        "    if ((get-item $FolderPath -Force).Attributes -band [System.IO.FileAttributes]::ReparsePoint) {",
+        "    if ((Get-item $FolderPath -Force).LinkType) {",
         "        return",
         "    }",
         "    New-Item -ItemType Directory -Path $persist_dir -Force | Out-Null",
@@ -46,7 +46,7 @@
         "if ($purge) {",
         "    $FolderPath = Join-Path $env:APPDATA 'eagle'",
         "    if (Test-Path $FolderPath) {",
-        "        if ((Get-Item $FolderPath -Force).Attributes -band [System.IO.FileAttributes]::ReparsePoint) {",
+        "        if ((Get-item $FolderPath -Force).LinkType {",
         "            Remove-Item $FolderPath -Force -Recurse",
         "        }",
         "    }",
@@ -63,8 +63,7 @@
             }
         },
         "hash": {
-            "url": "",
-            "regex": ""
+            "mode": "download"
         }
     }
 }
