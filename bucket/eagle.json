@@ -19,18 +19,18 @@
     ],
     "installer": {
         "script": [
-            "sudo Start-Process -FilePath \"$dir\\install.exe\" -WorkingDirectory \"$dir\" -ArgumentList \"/S /D=$dir\" -Wait"
+            "Start-Process -FilePath \"$dir\\install.exe\" -WorkingDirectory \"$dir\" -ArgumentList \"/S /D=$dir\" -Wait"
         ]
     },
     "uninstaller": {
         "script": [
-            "sudo Start-Process -FilePath \"$dir\\uninst.exe\" -ArgumentList \"/S\" -Wait"
+            "Start-Process -FilePath \"$dir\\uninst.exe\" -ArgumentList \"/S\" -Wait"
         ]
     },
     "pre_install": [
         "$FolderPath = Join-Path $env:APPDATA 'eagle'",
         "if (Test-Path $FolderPath) {",
-        "    if ((Get-item $FolderPath -Force).LinkType) {",
+        "    if ( (Get-item $FolderPath -Force).LinkType ) {",
         "        return",
         "    }",
         "    New-Item -ItemType Directory -Path $persist_dir -Force | Out-Null",
@@ -46,7 +46,7 @@
         "if ($purge) {",
         "    $FolderPath = Join-Path $env:APPDATA 'eagle'",
         "    if (Test-Path $FolderPath) {",
-        "        if ((Get-item $FolderPath -Force).LinkType {",
+        "        if ((Get-item $FolderPath -Force).LinkType) {",
         "            Remove-Item $FolderPath -Force -Recurse",
         "        }",
         "    }",
