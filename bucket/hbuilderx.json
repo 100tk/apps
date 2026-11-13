@@ -1,6 +1,6 @@
 {
     "##": "",
-    "version": "5.34",
+    "version": "-8",
     "description": "",
     "homepage": "https://www.dcloud.io/hbuilderx.html",
     "license": "",
@@ -8,10 +8,14 @@
     "architecture": {
         "64bit": {
             "url": "https://download1.dcloud.net.cn/download/HBuilderX.5.34.2026102909.zip",
-            "hash": "5DDEF1FE3D61F9F11BD8F390B633F204EEC00BD2C04FFF270CBBA21727C6EFF4"
+            "hash": ""
         }
     },
-    "shortcuts": [[]],
+    "shortcuts": [
+        [
+            
+        ]
+    ],
     "pre_install": "",
     "installer": {
         "script": ""
