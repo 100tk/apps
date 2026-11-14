@@ -55,15 +55,13 @@
     ],
     "checkver": {
         "url": "https://cn.eagle.cool",
-        "regex": "(\\d+\\.\\d+)\\.\\d+\\s+Build(\\d+)"
+        "regex": "(\\d+\\.\\d+)\\.(\\d+)\\s+Build(\\d+)",
+        "replace": "${1}.${2}.${3}"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://r2-app.eagle.cool/releases/Eagle-$matchHead-x64-build$matchBuild.exe",
-                "hash":{
-                    "regex": "(\\d+\\.\\d+)\\.\\d+\\s+Build(\\d+)"
-                }
+                "url": "https://r2-app.eagle.cool/releases/Eagle-$match1-x64-build$match3.exe"
             }
         },
         "hash": {
