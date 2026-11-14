@@ -1,6 +1,6 @@
 {
     "##": "素材管理从未如此简单",
-    "version": "4.0.23",
+    "version": "4.0.0.23",
     "description": "Eagle 素材管理",
     "homepage": "https://cn.eagle.cool",
     "license": "",
@@ -19,7 +19,8 @@
     ],
     "installer": {
         "script": [
-            "Start-Process -FilePath \"$dir\\install.exe\" -WorkingDirectory \"$dir\" -ArgumentList \"/S /D=$dir\" -Wait"
+            "Start-Process -FilePath \"$dir\\install.exe\" -WorkingDirectory \"$dir\" -ArgumentList \"/S /D=$dir\" -Wait",
+            "remove-Item -Path \"$dir\\install.exe\" -Force"
         ]
     },
     "uninstaller": {
@@ -54,12 +55,15 @@
     ],
     "checkver": {
         "url": "https://cn.eagle.cool",
-        "regex": "版本"
+        "regex": "(\\d+\\.\\d+)\\.\\d+\\s+Build(\\d+)"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://r2-app.eagle.cool/releases/Eagle-4.0-x64-build23.exe"
+                "url": "https://r2-app.eagle.cool/releases/Eagle-$matchHead-x64-build$matchBuild.exe",
+                "hash":{
+                    "regex": "(\\d+\\.\\d+)\\.\\d+\\s+Build(\\d+)"
+                }
             }
         },
         "hash": {
