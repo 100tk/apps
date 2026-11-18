@@ -11,12 +11,6 @@
             "hash": "6F92AECB6C53F5E3A9DEE49605F1955AE116E2ADCD5ED2E6DE1D19D732F94D38"
         }
     },
-    "shortcuts": [
-        [
-            "eagle.exe",
-            "Eagle素材管理"
-        ]
-    ],
     "installer": {
         "script": [
             "Start-Process -FilePath \"$dir\\install.exe\" -WorkingDirectory \"$dir\" -ArgumentList \"/S /D=$dir\" -Wait",
